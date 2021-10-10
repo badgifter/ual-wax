@@ -232,9 +232,9 @@ export class Wax extends Authenticator {
 
         const login = {
             // @ts-ignore
-            userAccount: userAccount || this.wax.userAccount,
+            userAccount: userAccount || this.wax.user.account,
             // @ts-ignore
-            pubKeys: pubKeys || this.wax.pubKeys,
+            pubKeys: pubKeys || this.wax.user.keys,
             expire: Date.now() + this.shouldInvalidateAfter() * 1000
         };
 
