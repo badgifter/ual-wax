@@ -1,5 +1,5 @@
 {
-  "name": "@eosdacio/ual-wax",
+  "name": "@neftyblocks/ual-wax",
   "version": "1.6.0",
   "description": "",
   "main": "dist/index.js",
