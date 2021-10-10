@@ -1,7 +1,7 @@
 import { Authenticator, Chain, User, UALError } from 'universal-authenticator-library'
 import {UALErrorType} from "universal-authenticator-library/dist";
 import {SignatureProvider} from "eosjs/dist/eosjs-api-interfaces";
-import { WaxJS } from "@waxio/waxjs/dist"
+import { WaxJS } from "@nft-blender/waxjs/dist"
 
 import { WaxUser } from "./WaxUser";
 import { WaxIcon } from './WaxIcon';
