@@ -1,25 +1,34 @@
 {
-  "name": "@neftyblocks/ual-wax",
-  "version": "1.6.1",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc --build tsconfig.json",
-    "lint": "tslint -p tsconfig.json"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "eosDAC",
-    "url": "https://eosdac.io/"
-  },
-  "dependencies": {
-    "@nft-blender/waxjs": "^1.0.2",
-    "eosjs": "^22.1.0",
-    "universal-authenticator-library": "^0.3.0"
-  },
-  "devDependencies": {
-    "ts-loader": "^7.0.4",
-    "tslint": "^6.1.2",
-    "typescript": "^3.9.2"
-  }
+    "name": "@nefty/ual-wax",
+    "version": "0.1.0",
+    "description": "",
+    "scripts": {
+        "build": "unbuild",
+        "play": "cd playground && rm -rf node_modules/ && yarn && yarn upgrade @nefty/ual-wax && yarn dev",
+        "lint": "eslint --ext .ts,.vue --ignore-path .gitignore --fix .",
+        "format": "prettier .  --write"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "eosDAC",
+        "url": "https://eosdac.io/"
+    },
+    "repository": "https://github.com/mvdschee/ual-wax",
+    "dependencies": {
+        "@nft-blender/waxjs": "^1.0.2",
+        "eosjs": "^22.1.0",
+        "universal-authenticator-library": "^0.3.0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "5.5.0",
+        "@typescript-eslint/parser": "5.5.0",
+        "@vue/eslint-config-prettier": "6.0.0",
+        "@vue/eslint-config-typescript": "9.1.0",
+        "eslint": "8.4.0",
+        "eslint-plugin-vue": "8.2.0",
+        "eslint-plugin-prettier": "4.0.0",
+        "prettier": "^2.5.1",
+        "unbuild": "^0.6.7",
+        "typescript": "^4.5.4"
+    }
 }

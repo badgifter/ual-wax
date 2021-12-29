@@ -1,0 +1,15 @@
+{
+	"private": true,
+	"scripts": {
+		"dev": "nuxi dev",
+		"build": "nuxi build",
+		"start": "node .output/server/index.mjs"
+	},
+	"dependencies": {
+		"@nefty/ual-wax": "file:../lib",
+		"nuxt3-ual": "^0.3.3"
+	},
+	"devDependencies": {
+		"nuxt3": "latest"
+	}
+}

@@ -1,6 +1,6 @@
-import {Chain, SignTransactionResponse, User, UALErrorType} from 'universal-authenticator-library'
-import {WaxJS} from "@nft-blender/waxjs/dist"
-import {UALWaxError} from "./UALWaxError";
+import { Chain, SignTransactionResponse, User, UALErrorType } from 'universal-authenticator-library';
+import { WaxJS } from '@nft-blender/waxjs/dist';
+import { UALWaxError } from './UALWaxError';
 
 export class WaxUser extends User {
     public readonly accountName: string;
@@ -46,26 +46,25 @@ export class WaxUser extends User {
             const completedTransaction = await this.wax.api.transact(transaction, options);
 
             return this.returnEosjsTransaction(options.broadcast !== false, completedTransaction);
-        } catch (e) {
-            throw new UALWaxError(
-                e.message ? e.message : 'Unable to sign transaction',
-                UALErrorType.Signing, e
-            );
+        } catch (e: any) {
+            throw new UALWaxError(e.message ? e.message : 'Unable to sign transaction', UALErrorType.Signing, e);
         }
     }
 
     async signArbitrary(): Promise<string> {
         throw new UALWaxError(
             'WAX Cloud Wallet does not currently support signArbitrary',
-            UALErrorType.Unsupported, null
+            UALErrorType.Unsupported,
+            null
         );
     }
 
     async verifyKeyOwnership(): Promise<boolean> {
-      throw new UALWaxError(
-          'WAX Cloud Wallet does not currently support verifyKeyOwnership',
-          UALErrorType.Unsupported, null
-      );
+        throw new UALWaxError(
+            'WAX Cloud Wallet does not currently support verifyKeyOwnership',
+            UALErrorType.Unsupported,
+            null
+        );
     }
 
     async getAccountName(): Promise<string> {

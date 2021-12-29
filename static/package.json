@@ -1,0 +1,31 @@
+{
+    "name": "@nefty/ual-wax",
+    "version": "0.1.0",
+    "description": "WAX wallet adjustments from NeftyBlocks team",
+    "license": "MIT",
+    "author": {
+        "name": "eosDAC",
+        "url": "https://eosdac.io/"
+    },
+    "repository": "https://github.com/mvdschee/ual-wax",
+    "contributors": [
+        "José Andrade",
+        "Max van der Schee"
+    ],
+    "exports": {
+        ".": {
+            "import": "./index.mjs",
+            "require": "./index.cjs",
+            "types": "./index.d.ts"
+        },
+        "./*": "./*"
+    },
+    "main": "./index.cjs",
+    "types": "./index.d.ts",
+    "module": "./index.mjs",
+    "dependencies": {
+        "@nft-blender/waxjs": "^1.0.2",
+        "eosjs": "^22.1.0",
+        "universal-authenticator-library": "^0.3.0"
+    }
+}

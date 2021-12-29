@@ -1,3 +1,11 @@
-.idea
-dist
 node_modules
+*.log
+.nuxt
+nuxt.d.ts
+.output
+package-lock.json
+
+.DS_Store
+.vercel
+.idea
+/lib
