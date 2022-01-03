@@ -1,7 +1,7 @@
 import { Authenticator, Chain, User, UALError, UALErrorType } from 'universal-authenticator-library';
 import { ApiInterfaces } from 'eosjs';
 // import js as this is not ES module
-import { WaxJS } from '@nft-blender/waxjs/dist/index.js';
+import { WaxJS } from '@waxio/waxjs/dist';
 import { WaxUser } from './WaxUser';
 import { UALWaxError } from './UALWaxError';
 

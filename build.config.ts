@@ -8,5 +8,5 @@ export default defineBuildConfig({
     clean: true,
     outDir: 'lib',
     entries: ['src/index', 'static/'],
-    externals: ['@nft-blender/waxjs', 'eosjs', 'universal-authenticator-library'],
+    externals: ['@waxio/waxjs', 'eosjs', 'universal-authenticator-library'],
 });

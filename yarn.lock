@@ -52,13 +52,6 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@nft-blender/waxjs@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@nft-blender/waxjs/-/waxjs-1.0.2.tgz#dfadb8f47866b43dd5e363c7ca00a9deb7154d76"
-  integrity sha512-5fqn2puTd3omfBtoC1nl7yG2ARNl+55bUELoztCDH926WGihc5vr+q8O9ef2HyTklF8Yxxs+b5kiRHod57+6+Q==
-  dependencies:
-    eosjs "^22.1.0"
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -254,6 +247,13 @@
   integrity sha512-j/852/ZYQ5wDvCD3HE2q4uqJwJAceer2FwoEch1nFo+zTOsPrbzbE3cuWIs3kvu5hdFsGTMYwRwjI6fqZKDMxQ==
   dependencies:
     vue-eslint-parser "^8.0.0"
+
+"@waxio/waxjs@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@waxio/waxjs/-/waxjs-1.0.4.tgz#707dc08ba7f681c9ba753431ab8fbfe901890938"
+  integrity sha512-fe2VLu5x30LBW/9+kTNek5MbKYdvtEXBXt9lgTcMYwyCSvcZzxi7FGwOYdUy5FwVYESJX+Pki+KdYh0CtazUuA==
+  dependencies:
+    eosjs "^22.1.0"
 
 acorn-jsx@^5.3.1:
   version "5.3.2"

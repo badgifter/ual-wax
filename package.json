@@ -1,6 +1,6 @@
 {
     "name": "@nefty/ual-wax",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "scripts": {
         "build": "unbuild",
@@ -15,7 +15,7 @@
     },
     "repository": "https://github.com/mvdschee/ual-wax",
     "dependencies": {
-        "@nft-blender/waxjs": "^1.0.2",
+        "@waxio/waxjs": "^1.0.4",
         "eosjs": "^22.1.0",
         "universal-authenticator-library": "^0.3.0"
     },
