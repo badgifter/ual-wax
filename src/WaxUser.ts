@@ -1,5 +1,5 @@
 import { Chain, SignTransactionResponse, User, UALErrorType } from 'universal-authenticator-library';
-import { WaxJS } from '@waxio/waxjs/dist';
+import { WaxJS } from '@waxio/waxjs/dist/index.js';
 import { UALWaxError } from './UALWaxError';
 
 export class WaxUser extends User {
