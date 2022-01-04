@@ -42,9 +42,9 @@ import { createTransaction, priceCalculator, transactionActions } from './utils/
 const { $ual } = useNuxtApp();
 const config = useRuntimeConfig();
 
-const user = ref(null);
-const wax = ref(null);
-const ual = ref(null);
+let user = null;
+let wax = null;
+let ual = null;
 
 const saleId = ref();
 const sale = ref(null);
@@ -55,12 +55,12 @@ onMounted(async () => {
 });
 
 const login = () => {
-    ual.value.loginUser(wax.value);
+    ual.loginUser(wax);
 };
 
 const logout = () => {
-    ual.value.logoutUser();
-    user.value = null;
+    ual.logoutUser();
+    user = null;
 };
 
 const walletMount = () => {
@@ -75,20 +75,20 @@ const walletMount = () => {
     };
 
     // init the wallets
-    wax.value = new Wax([network], { appName });
+    wax = new Wax([network], { appName });
 
     // init ual
-    ual.value = $ual([wax.value], setUser);
-    ual.value.init();
+    ual = $ual([wax], setUser);
+    ual.init();
 };
 
 const setUser = (users: NuxtUser) => {
     // no support for multiple accounts
-    user.value = users[0];
+    user = users[0];
 };
 
 const buy = async () => {
-    const { accountName, requestPermission } = user.value;
+    const { accountName, requestPermission } = user;
     const { assets_ids, price } = sale.value;
 
     const actions = transactionActions({
@@ -103,11 +103,13 @@ const buy = async () => {
     });
 
     try {
-        const { transaction, options } = await createTransaction(user.value, actions);
+        const { transaction, options } = await createTransaction(user, actions);
 
-        console.log(user.value);
+        console.log(user);
+        console.log(transaction);
+        console.log(options);
 
-        const signedTransaction = await user.value.signTransaction(transaction, options);
+        const signedTransaction = await user.signTransaction(transaction, options);
 
         console.log(signedTransaction);
     } catch (error) {
