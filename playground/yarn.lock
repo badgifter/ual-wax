@@ -278,9 +278,9 @@
     tar "^6.1.11"
 
 "@nefty/ual-wax@file:../lib":
-  version "0.1.0"
+  version "0.1.2"
   dependencies:
-    "@nft-blender/waxjs" "^1.0.2"
+    "@waxio/waxjs" "^1.0.4"
     eosjs "^22.1.0"
     universal-authenticator-library "^0.3.0"
 
@@ -290,13 +290,6 @@
   integrity sha512-CQ2L2MEA/hfcZrVl7yJrNCqTGjXDIrdcgF4NX/OwzU5QAmSQmjQWI890nMHf98Q7++K8ljTFyICpq26HDLKbDg==
   dependencies:
     is-promise "^4.0.0"
-
-"@nft-blender/waxjs@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@nft-blender/waxjs/-/waxjs-1.0.2.tgz#dfadb8f47866b43dd5e363c7ca00a9deb7154d76"
-  integrity sha512-5fqn2puTd3omfBtoC1nl7yG2ARNl+55bUELoztCDH926WGihc5vr+q8O9ef2HyTklF8Yxxs+b5kiRHod57+6+Q==
-  dependencies:
-    eosjs "^22.1.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -894,6 +887,13 @@
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@vueuse/head/-/head-0.7.2.tgz#594e857bd7161c6087e5d0934a7ee0f7c4276154"
   integrity sha512-97RxYbIYwB9yFuRbdDbktsjKS0k12wYNksYV/UtYLOFNx+GAflK2kQ63b+sx09MJllEozD3GLeXV7O8rzMskeQ==
+
+"@waxio/waxjs@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@waxio/waxjs/-/waxjs-1.0.4.tgz#707dc08ba7f681c9ba753431ab8fbfe901890938"
+  integrity sha512-fe2VLu5x30LBW/9+kTNek5MbKYdvtEXBXt9lgTcMYwyCSvcZzxi7FGwOYdUy5FwVYESJX+Pki+KdYh0CtazUuA==
+  dependencies:
+    eosjs "^22.1.0"
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
