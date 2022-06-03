@@ -1,5 +1,5 @@
 {
-    "name": "@nefty/ual-wax",
+    "name": "@badgifter/ual-wax",
     "version": "0.1.2",
     "description": "",
     "scripts": {
@@ -13,10 +13,10 @@
         "name": "eosDAC",
         "url": "https://eosdac.io/"
     },
-    "repository": "https://github.com/mvdschee/ual-wax",
+    "repository": "https://github.com/badgifter/ual-wax",
     "dependencies": {
-        "@waxio/waxjs": "^1.0.4",
-        "eosjs": "^22.1.0",
+        "@waxio/waxjs": "github:badgifter/waxjs",
+        "eosjs": "github:badgifter/eosjs",
         "universal-authenticator-library": "^0.3.0"
     },
     "devDependencies": {
