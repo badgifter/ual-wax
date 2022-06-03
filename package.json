@@ -19,6 +19,14 @@
         "eosjs": "github:badgifter/eosjs",
         "universal-authenticator-library": "^0.3.0"
     },
+    "exports": {
+        ".": {
+            "import": "./lib/index.mjs",
+            "require": "./lib/index.cjs",
+            "types": "./lib/index.d.ts"
+        },
+        "./*": "./*"
+    },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "5.5.0",
         "@typescript-eslint/parser": "5.5.0",
