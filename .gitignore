@@ -3,7 +3,6 @@ node_modules
 .nuxt
 nuxt.d.ts
 .output
-package-lock.json
 
 .DS_Store
 .vercel
