@@ -15,7 +15,7 @@
     },
     "repository": "https://github.com/badgifter/ual-wax",
     "dependencies": {
-        "@waxio/waxjs": "^1.0.4",
+        "@waxio/waxjs": "github:badgifter/waxjs",
         "eosjs": "github:badgifter/eosjs",
         "universal-authenticator-library": "^0.3.0"
     },
@@ -33,10 +33,10 @@
         "@vue/eslint-config-prettier": "6.0.0",
         "@vue/eslint-config-typescript": "9.1.0",
         "eslint": "8.4.0",
-        "eslint-plugin-prettier": "4.0.0",
         "eslint-plugin-vue": "8.2.0",
+        "eslint-plugin-prettier": "4.0.0",
         "prettier": "^2.5.1",
-        "typescript": "^4.5.4",
-        "unbuild": "^0.6.7"
+        "unbuild": "^0.6.7",
+        "typescript": "^4.5.4"
     }
 }
